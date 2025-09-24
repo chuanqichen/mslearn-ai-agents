@@ -2,3 +2,8 @@ python-dotenv
 httpx
 azure-identity
 uvicorn
+starlette
+sse-starlette
+fastapi
+a2a-sdk
+a2a-sdk[http-server]
