@@ -7,7 +7,7 @@ set -e
 echo "Setting up shared virtual environment for AI Agents workspace..."
 
 # Create a shared virtual environment in the workspace root
-VENV_DIR="/workspaces/ai-agents/.venv"
+VENV_DIR="/workspaces/mslearn-ai-agents/.venv"
 
 # Remove existing virtual environment if it exists
 if [ -d "$VENV_DIR" ]; then
@@ -33,7 +33,7 @@ if python -m venv "$VENV_DIR" --system-site-packages; then
     
     # Install from any requirements.txt files found in lab directories
     echo "Installing packages from lab requirements files..."
-    find /workspaces/ai-agents/Labfiles -name "requirements.txt" -type f | while read -r req_file; do
+    find /workspaces/mslearn-ai-agents/Labfiles -name "requirements.txt" -type f | while read -r req_file; do
         echo "Installing from: $req_file"
         pip install -r "$req_file" 2>/dev/null || {
             echo "Warning: Some packages from $req_file failed to install"
