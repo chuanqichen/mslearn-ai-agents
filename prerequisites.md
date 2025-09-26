@@ -37,7 +37,7 @@ This repository contains instructions and assets for building agents on Azure.
 To run the exercises in a Dev Container, follow these steps:
 
 1. Open the repository in Visual Studio Code.
-2. Press `F1` and select `Remote-Containers: Reopen in Container`.
+2. Press `F1` or from Menu "View" choose "Command Palette", type "dev containers reopen" and select `Remote-Containers: Reopen in Container`.
 3. Wait for the container to build and start.
 > This step may take around 20 minutes based on your network speed
 4. When the `postCreateCommand` is done, open a terminal in the container.
